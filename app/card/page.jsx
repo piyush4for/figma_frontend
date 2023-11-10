@@ -2,7 +2,7 @@
 import {useState, useEffect} from "react";
 import {Card, CardHeader, CardBody,CardFooter, Image, Button} from "@nextui-org/react";
 import axios from "axios";
-import { HeartIcon } from "../../components";
+import { HeartIcon } from "../../components/HeartIcon";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function App() {
