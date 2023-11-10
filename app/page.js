@@ -1,7 +1,7 @@
 import React from "react";
 import { Spacer } from "@nextui-org/react";
-import wine_bg from "@/public/images/homepage1.png";
-import Nav from "@/components/nav";
+import wine_bg from "../public/images/homepage1.png";
+import Nav from "../components/Nav";
 
 import CardComponent from "@/components/CardComponent";
 

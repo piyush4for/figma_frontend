@@ -1,6 +1,6 @@
-import wine_bg from "@/public/images/FormBg.png";
+import wine_bg from "../../public/images/FormBg.png";
 import React from "react";
-import SignUpFormCard from "@/components/SignUp/SignUpFormCard";
+import SignUpFormCard from "../../components/SignUp/SignUpFormCard";
 // style={{backgroundImage:`url(${wine_bg.src})`}}
 {
   /* <div className="container h-full px-20 py-24 bg-gradient-to-br from-red-900 via-red-900 via-black via-black via-black to-black" > */
