@@ -1,8 +1,7 @@
+"use client"
 import React,{useState,useEffect} from "react";
 import {
-  Badge,
   Button,
-  Image,
   Link,
   Navbar,
   NavbarBrand,
@@ -15,8 +14,7 @@ import {
   User
 } from "@nextui-org/react";
 import {Link as NextLink} from "next/link.js";
-import WalletLogo from '@/public/images/Groupwallet.svg'
-import ButtonGradiant from "./ButtonGradiant.jsx";
+// import WalletLogo from '@/public/images/Groupwallet.svg'
 import { WineLogo } from "./WineLogo.jsx";
 import { Wallet } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -105,6 +103,7 @@ export default function Nav() {
         <User   
         name="Jane Doe"
         description="Product Designer"
+        
         avatarProps={{
           src: "https://i.pravatar.cc/150?u=a04258114e29026702d"
         }}

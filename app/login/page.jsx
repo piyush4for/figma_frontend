@@ -10,7 +10,7 @@ const page = () => {
   return (
     <>
       <div>
-        <div className="bg-gradient-to-br from-red-950 via-black via-black via-black via-black to-black relative min-h-screen grid">
+        <div className="bg-gradient-to-br from-red-950 via-black  to-black relative min-h-screen grid">
           <div className="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 ">
             <div className="md:flex md:items-center md:justify-left w-full sm:w-auto md:h-full xl:w-1/2 p-8  md:p-10 lg:p-14 sm:rounded-lg md:rounded-none ">
               <div className="max-w-xl w-full space-y-12">

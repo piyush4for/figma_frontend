@@ -1,12 +1,6 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { Image } from "@nextui-org/react";
-import NextImage from "next/image";
-import { Button } from "@nextui-org/button";
+import React from "react";
 import { Spacer } from "@nextui-org/react";
-import { Chip } from "@nextui-org/react";
 import wine_bg from "@/public/images/homepage1.png";
-import bottleImage from "@/public/images/bottle2.png";
 import Nav from "@/components/nav";
 
 import CardComponent from "@/components/CardComponent";
