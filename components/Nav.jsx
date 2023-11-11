@@ -40,8 +40,10 @@ export default function Nav() {
   return (
     
     <Navbar
+    position="static"
       classNames={{
         item: [
+          
           "flex",
           "relative",
           "h-full",
@@ -57,9 +59,9 @@ export default function Nav() {
           "data-[active=true]:after:bg-primary",
         ],
       }}
-      // isBlurred='false'
+      isBlurred='false'
       onMenuOpenChange={setIsMenuOpen}
-      className="mt-2 lg:opacity-40 sm:opacity-40 md:opacity-40"
+      className="mt-2 bg-transparent w-screen"
       >
       <NavbarContent>
         <NavbarMenuToggle
@@ -82,7 +84,7 @@ export default function Nav() {
         className="hidden sm:flex gap-4 items-end ml-auto"
         justify="end"
         >
-        <NavbarItem className="flex"isActive>
+        <NavbarItem className="flex "isActive>
           <Link href="#" aria-current="page">
             HOME
           </Link>
@@ -107,18 +109,8 @@ export default function Nav() {
         {/* <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem> */}
-        {isAuthenticated ? 
-        <User   
-        name="Jane Doe"
-        description="Product Designer"
         
-        avatarProps={{
-          src: "https://i.pravatar.cc/150?u=a04258114e29026702d"
-        }}
-        />
-        
-        :
-        <NavbarItem>
+        <NavbarItem className="mt-8">
           <Button
             className="bg-gradient-to-r from-red-400 via-red-600 to-red-700"
             as={Link}
@@ -132,10 +124,10 @@ export default function Nav() {
 
           </Button>
         </NavbarItem>
-        }
+        
       </NavbarContent>
       
-      <NavbarMenu>
+      <NavbarMenu className="bg-transparent">
         <NavbarMenuItem>
           <Link
             style={{

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { useForm, Controller } from "react-hook-form";
+import { useForm, Controller ,reset} from "react-hook-form";
 import axios from 'axios';
 
 import { useRouter } from 'next/navigation';
@@ -72,10 +72,10 @@ const SignInForm = () => {
             const response = await axios.post('https://figma-backend.onrender.com/login', data)
             if (response.status === 200) {
               setToken(response.data.token);
-              localStorage.setItem('jwtToken', token);
+              localStorage.setItem('jwtToken', response.data.token);
               
-              console.log(token);
-              setTimeout( ()=> { router.push('/')},2000);
+              console.log(response.data.token);
+              response.data.token==null?reset():setTimeout( ()=> { router.push('/')},2000);
             } else {
               alert('Login failed. Please try again.');
             }
@@ -83,7 +83,7 @@ const SignInForm = () => {
             alert('wrong email or password');
             console.error('Error:', error);
           }
-          router
+          
         };
         
         //   const inputRegister = register("email", { required: true });
