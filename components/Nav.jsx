@@ -11,7 +11,8 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
   Spinner,
-  User
+  User,
+  Image
 } from "@nextui-org/react";
 import {Link as NextLink} from "next/link.js";
 // import WalletLogo from '@/public/images/Groupwallet.svg'
@@ -66,7 +67,14 @@ export default function Nav() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <WineLogo />
+          {/* <WineLogo /> */}
+          <Image
+          alt="Frame logo"
+          width={110} 
+          height={67}
+          radius="sm"
+          src="/images/FormLogo.png"
+        />
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent
