@@ -54,7 +54,7 @@ export default function CardComponent() {
   }
   
   const handlePrevPage = () => {
-    setperPage(20)
+    setperPage(10)
     if (page > 1) {
       setPage(page - 1);
     }
@@ -80,30 +80,31 @@ export default function CardComponent() {
       <p  className="px-4 text-3xl font-medium justify-start">
         MARKETPLACE
       </p>
-      <div className="justify-end">
-
+      <div className="flex justify-end items-center px-12  border-white ">
+      
           <Button
-            style={{ borderRadius: 50 }}
-            className="rounded-full mx-1  border-white border-1"
+            className=" mx-1 w-auto h-auto border-white border-1"
             variant="light"
-            size="icon"
+            radius="full"
+            isIconOnly
             onClick={handlePrevPage}
             >
-            <ChevronLeft className="h-4 w-4 " />
+            <ChevronLeft size={37} strokeWidth={0.5}/>
           </Button>
           <Button
-            className=" border-white border-1 mx-1"
-            style={{ borderRadius: 50 }}
+            className="w-auto h-auto  border-white border-1 mx-2"
             variant="light"
-            size="icon"
+            radius="full"
+            isIconOnly
             onClick={handleNextPage}
           >
-            <ChevronRight className="h-4 w-4" />
+            <ChevronRight size={37} strokeWidth={0.5}/>
           </Button>
           <Button
-            className="bg-sky-800 rounded-full mx-1"
+            className="bg-sky-800 "
             variant="flat"
             size="icon"
+            radius="large"
             onClick={handleAllPage}
             >
             ALL
@@ -111,7 +112,7 @@ export default function CardComponent() {
             </div>
         </div>
       {/* Cards grid */}
-        <div className="px-4 grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mt-4">
+        <div className="px-10 grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mt-4">
           {products.map((product, i) => (
             <div key={i} className="w-full">
               <Card className="py-4 max-w-[300px]">

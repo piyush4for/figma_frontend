@@ -34,7 +34,7 @@ export default function Nav() {
     } else {
       setIsAuthenticated(false);
     }
-    const timeout = setTimeout(() => setShowSpinner(false), 2000);
+    const timeout = setTimeout(() => setShowSpinner(false), 5000);
     return () => clearTimeout(timeout);
   }, []);
   return (
@@ -82,22 +82,22 @@ export default function Nav() {
         className="hidden sm:flex gap-4 items-end ml-auto"
         justify="end"
         >
-        <NavbarItem isActive>
+        <NavbarItem className="flex"isActive>
           <Link href="#" aria-current="page">
             HOME
           </Link>
         </NavbarItem>
-        <NavbarItem  >
+        <NavbarItem className="flex" >
           <Link color="foreground" href="#marketplace">
             MARKETPLACE
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="flex">
           <Link color="foreground" href="#brand">
             BRANDS
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="flex">
           <Link color="foreground" href="#wineries">
             WINERIES
           </Link>
