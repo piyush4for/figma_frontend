@@ -45,8 +45,8 @@ export default function Nav() {
           "flex",
           "relative",
           "h-full",
-          "items-center",
-          "space-x-6",
+          // "items-center",
+          "space-x-4",
           "data-[active=true]:after:content-['']",
           "data-[active=true]:after:absolute",
           "data-[active=true]:after:bottom-0",
@@ -79,7 +79,7 @@ export default function Nav() {
       </NavbarContent>
       <NavbarContent
         as="div"
-        className="hidden sm:flex gap-4 items-end"
+        className="hidden sm:flex gap-4 items-end ml-auto"
         justify="end"
         >
         <NavbarItem isActive>
@@ -103,7 +103,7 @@ export default function Nav() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent justify="end" className="hidden sm:flex gap-6">
+      <NavbarContent justify="end" className="hidden sm:flex gap-6 ">
         {/* <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem> */}

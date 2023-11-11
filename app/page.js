@@ -3,7 +3,7 @@ import { Spacer } from "@nextui-org/react";
 import wine_bg from "../public/images/homepage1.png";
 import Nav from "../components/Nav";
 
-import CardComponent from "@/components/CardComponent";
+import CardComponent from "../components/CardComponent";
 
 
 export default function Home() {
