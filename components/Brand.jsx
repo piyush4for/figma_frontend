@@ -16,7 +16,7 @@ const Brand = () => {
             <div className="lg:max-w-lg">
                 <h1 className="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">OUR COLLABS</h1>
                 <p className="mt-4 text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consetur. Turpis interdum vitae cursus diam orci suspendisse ipsum phasellus. Scesque pharetra.Lorem ipsum dolor sit amet consetur. Turpis interdum vitae cursus diam orci suspendisse ipsum phasellus. Scesque pharetra.</p>
-                <div className="grid gap-6 mt-8 sm:grid-cols-2">
+                <div className="grid gap-6 mt-8 grid-cols-2 sm:grid-cols-2">
                     <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
                         <Image src="/images/smallBrand1.png" height={100} width={200}/>
                     </div>

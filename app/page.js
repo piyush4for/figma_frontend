@@ -8,6 +8,8 @@ import { Button,Link } from "@nextui-org/react";
 
 import CardComponent from "../components/CardComponent";
 import Brand from "../components/Brand";
+import SubscriptionForm from "../components/SubscriptionForm";
+import FooterComponent from "../components/FooterComponent";
 
 export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -43,6 +45,10 @@ export default function Home() {
 
           <Spacer y="40" />
           <Brand />
+          <Spacer y="10" />
+          <SubscriptionForm/>
+          <Spacer y="10" />
+          <FooterComponent/>
         </div>
       ) : (
         <div>
