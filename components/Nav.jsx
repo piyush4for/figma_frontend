@@ -40,7 +40,7 @@ export default function Nav() {
   return (
     
     <Navbar
-    position="static"
+    position="sticky"
       classNames={{
         item: [
           
@@ -132,7 +132,7 @@ export default function Nav() {
           <Link
             style={{
               minWidth: "100%",
-              color: "inherit",
+              color: "primary",
             }}
             href="#"
             as={NextLink}
@@ -176,6 +176,23 @@ export default function Nav() {
             WINERIES
           </Link>
         </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            style={{
+              minWidth: "100%",
+              color: "danger",
+            }}
+            href="#wineries"
+            as={NextLink}
+            onClick={()=>{
+              localStorage.removeItem("jwtToken")
+              router.push("/login");
+            }}
+          >
+            LOGOUT
+          </Link>
+        </NavbarMenuItem>
+        
       </NavbarMenu>
  
 

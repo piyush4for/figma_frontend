@@ -10,6 +10,7 @@ import CardComponent from "../components/CardComponent";
 import Brand from "../components/Brand";
 import SubscriptionForm from "../components/SubscriptionForm";
 import FooterComponent from "../components/FooterComponent";
+import { Wineries } from "../components/Wineries";
 
 export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -25,8 +26,11 @@ export default function Home() {
 
   return (
     <>
+    
       {isAuthenticated ? (
+        
         <div id="parent">
+          
           <div className="flex h-screen w-screen items-start justify-center bg-gray-900 bg-cover bg-no-repeat bg-transparent"  style={{ backgroundImage: `url(${wine_bg_light.src})` }}>
             <div
               id="imagecontainer"
@@ -45,6 +49,8 @@ export default function Home() {
 
           <Spacer y="40" />
           <Brand />
+          <Spacer y="10" />
+          <Wineries/>
           <Spacer y="10" />
           <SubscriptionForm/>
           <Spacer y="10" />

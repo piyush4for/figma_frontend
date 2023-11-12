@@ -118,7 +118,7 @@ export default function CardComponent() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="/images/bottle2.png"
+                  src="/images/card.png"
                   width={270}
                 />
                 <p className="justify-between  overflow-hidden py-1 absolute before:rounded-xl rounded-large top-5 right-3 w-12  ml-12 z-20">
