@@ -4,7 +4,7 @@ import React from "react";
 
 export const Wineries = () => {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div id="wineries" className="flex flex-col lg:flex-row">
       {/* Left Side (Image) */}
       <div className="w-full h-auto lg:w-full lg:h-full">
         <div className="flex items-center justify-center h-full">

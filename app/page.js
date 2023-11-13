@@ -11,6 +11,7 @@ import Brand from "../components/Brand";
 import SubscriptionForm from "../components/SubscriptionForm";
 import FooterComponent from "../components/FooterComponent";
 import { Wineries } from "../components/Wineries";
+import HomePageStats from "../components/HomePageStats";
 
 export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -40,7 +41,7 @@ export default function Home() {
             >
             <Nav />
             <div id="item inside shadow image" className="flex flex-col h-screen justify-center items-center bgimg bg-cover">
-              THE WEB# wine
+              <HomePageStats/>
             </div>
             </div>
           </div>

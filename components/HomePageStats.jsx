@@ -1,25 +1,25 @@
-import Nav from "../../components/Nav";
-import Brand from "../../components/Brand";
-import React from "react";
-import { Image } from "@nextui-org/react";
+import React from 'react'
+import { Image } from '@nextui-org/react'
 
-const page = () => {
+const HomePageStats = () => {
   return (
-    <section class="bg-transparent">
+    <div>
+        <section class="bg-transparent">
       <div class="container px-6 pb-10 mx-auto">
         <div class="flex items-center justify-between">
-          <Nav />
+          {/* <Nav /> */}
         </div>
 
         {/* <hr class="mt-8 border-gray-200 dark:border-gray-700" /> */}
 
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 ">
+        <div class="mt-10 pt-10 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 ">
           <div className="hidden md:block">
             <div className="px-20 ">
               <Image
                 class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
                 src="/images/homepageIcon1.png"
                 alt=""
+                loading='lazy'
               />
             </div>
 
@@ -76,21 +76,22 @@ const page = () => {
             </div>
           </div>
 
-          <div>
+          <div className='hidden md:block'>
             <Image
               class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
               src="/images/homepageIcon2.png"
               alt=""
             />
 
-            <div class="mt-8 pt-40">
+            <div class="mt-8 pt-40 hidden md:block">
               <Image src="/images/homepageIcon3.png" />
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+    </div>
+  )
+}
 
-export default page;
+export default HomePageStats

@@ -75,7 +75,7 @@ const SignInForm = () => {
               localStorage.setItem('jwtToken', response.data.token);
               
               console.log(response.data.token);
-              response.data.token==null?reset():setTimeout( ()=> { router.push('/')},2000);
+              response.data.token==null?reset():setTimeout( ()=> { router.push('/')},1000);
             } else {
               alert('Login failed. Please try again.');
             }
