@@ -9,7 +9,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import axios from "axios";
-import { HeartIcon } from "@/components/HeartIcon";
+import { HeartIcon } from "./HeartIcon";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function CardComponent() {

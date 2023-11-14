@@ -68,7 +68,7 @@ export default function Nav() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand>
+        <NavbarBrand className="xl:-ml-20" >
           {/* <WineLogo /> */}
           <Image
           alt="Frame logo"
@@ -81,8 +81,7 @@ export default function Nav() {
       </NavbarContent>
       <NavbarContent
         as="div"
-        className="hidden sm:flex gap-4 items-end ml-auto"
-        justify="end"
+        className="hidden sm:flex gap-9 ml-auto "
         >
         <NavbarItem className="flex "isActive>
           <Link href="#" aria-current="page">
@@ -104,13 +103,7 @@ export default function Nav() {
             WINERIES
           </Link>
         </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end" className="hidden sm:flex gap-6 ">
-        {/* <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem> */}
-        
-        <NavbarItem className="mt-8">
+        <NavbarItem className="mt-8 ">
           <Button
             className="bg-gradient-to-r from-red-400 via-red-600 to-red-700"
             as={Link}
@@ -124,8 +117,8 @@ export default function Nav() {
 
           </Button>
         </NavbarItem>
-        
       </NavbarContent>
+      
       
       <NavbarMenu className="bg-transparent">
         <NavbarMenuItem>

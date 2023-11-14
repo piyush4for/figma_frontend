@@ -13,7 +13,7 @@ const HomePageStats = () => {
         {/* <hr className="mt-8 border-gray-200 dark:border-gray-700" /> */}
 
         <div className="mb-0  grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 ">
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="">
               <Image
                 className=" object-scale-down w-full h-64 rounded-lg lg:h-80 lg:ml-20 lg:-mt-20"
@@ -24,7 +24,7 @@ const HomePageStats = () => {
               />
             </div>
 
-            <div className="mt-20 py-10">
+            <div className="mt-10 py-5">
               {/* stats */}
               <div className="px-4 py-16 mx-auto sm:max-w-l md:max-w-md lg:max-w-xl md:px-24 lg:px-8 lg:py-10">
       <div className="grid row-gap-8 px-20 sm:grid-cols-3">
@@ -46,9 +46,10 @@ const HomePageStats = () => {
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center mx-auto sm:text-center">
             
-            <h1 className="text-[100px] px-10 font-extrabold font-Consolas">𝖙𝖍𝖊 𝖜𝖎𝖓𝖊</h1>
+            <h1 className="text-[130px] px-10 font-extrabold -mb-20 uppercase">𝖙𝖍𝖊 </h1>
+            <h1 className="text-[130px] px-10 font-extrabold -mb-10 uppercase"> 𝖜𝖎𝖓𝖊</h1>
             <div className="mt-8">
               <h1 className=" text-3xl text-center font-semibold text-gray-800 dark:text-white">
                 & Spirits Web3 Marketplace
@@ -75,17 +76,18 @@ const HomePageStats = () => {
                 </div>
               </div>
             </div>
+                <Image className="hidden xl:block px-40 py-10" src='/images/carousal.png'/>
           </div>
 
-          <div className='hidden md:block'>
+          <div className='hidden xl:block'>
             <Image
               className="object-cover object-center w-full h-64 rounded-lg lg:h-40"
               src="/images/homepageIcon2.png"
               alt=""
-              sizes
+              
             />
 
-            <div className="mt-8 pt-40 hidden md:block">
+            <div className=" pt-40 ">
               <Image src="/images/homepageIcon3.png" />
             </div>
           </div>

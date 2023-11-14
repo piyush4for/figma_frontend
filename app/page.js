@@ -32,7 +32,7 @@ export default function Home() {
         
         <div id="parent">
           
-          <div className="flex h-screen w-screen items-start justify-center bg-gray-900 bg-cover bg-no-repeat bg-transparent"  style={{ backgroundImage: `url(${wine_bg_light.src})` }}>
+          <div className="flex h-screen w-screen items-start  justify-center  bg-cover bg-no-repeat bg-transparent"  style={{ backgroundImage: `url(${wine_bg_light.src})`,backgroundPositionX:200,backgroundSize:"cover" }}>
             <div
               id="imagecontainer"
               style={{ backgroundImage: `url(${wine_bg_dark.src})` }}
