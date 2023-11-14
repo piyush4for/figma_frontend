@@ -176,12 +176,11 @@ export default function Nav() {
             WINERIES
           </Link>
         </NavbarMenuItem>
-        <NavbarMenuItem >
+        <NavbarMenuItem>
           <Link
             style={{
               minWidth: "100%",
               color: "danger",
-              
             }}
             href="#wineries"
             as={NextLink}

@@ -15,12 +15,10 @@ import {
   } from "@nextui-org/react";
 import { EyeFilledIcon } from '../PasswordInput/EyeFilledIcon';
 import { EyeSlashFilledIcon } from '../PasswordInput/EyeSlashFilledIcon';
-import { useRouter } from 'next/navigation';
 
    
       
 const SignUpForm = () => {
-  const router = useRouter()
     
     //for email valiadate
     const [value, setValue] = React.useState("aadya@mailinator.com");
@@ -78,7 +76,7 @@ const SignUpForm = () => {
                 progress:0 
                 
             });
-            setTimeout( ()=> { router.push('/login')},6000)
+              
             } else {
                 toast.error('connection error', {
                     position: toast.POSITION.TOP_RIGHT,

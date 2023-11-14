@@ -61,7 +61,7 @@ export default function Home() {
         <div>
           <h1 className="text-2xl font-semibold mb-4">Not Authenticated</h1>
           <p>Please sign in to access the dashboard.</p>
-          <Button asChild>
+          <Button >
             <Link href="/login">Login</Link>
           </Button>
         </div>
