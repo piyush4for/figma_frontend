@@ -21,8 +21,11 @@ const SubscriptionForm = () => {
               <Input
                 variant="bordered"
                 
-                classNames={{label:"text-black absolute ml-2 mb-8 space-4 bg-black text-black px-1"}}
-                isInvalid={true}
+                classNames={{label:"text-white absolute ml-2 mb-8 space-4 bg-black px-1"}}
+                className="w-72"
+                isInvalid={false}
+                color="primary"
+                radius="sm"
                 label="Email"
                 type="email"
                 name="email"

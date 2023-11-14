@@ -16,8 +16,8 @@ export default function CardComponent() {
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
   const [perPage, setperPage] = useState(8);
-  const [isButtonSelectedGroup, setisButtonSelectedGroup] = useState({});
-  const [liked, setLiked] = useState({});
+  const [isButtonSelectedGroup, setisButtonSelectedGroup] = useState({1:"solid",});
+  const [liked, setLiked] = useState({1:"currentColor",});
 
   const fetchProducts = async (page) => {
     try {
@@ -41,19 +41,18 @@ export default function CardComponent() {
 
   useEffect(() => {
     fetchProducts(page);
-  }, [page]);
+  }, [page,perPage]);
 
   const handleNextPage = () => {
     setPage(page + 1);
-    setperPage(8);
+    setperPage(perPage);
   };
   const handleAllPage = () => {
-    page + 1 - 1;
-    setperPage(10);
+    setperPage(20);
   };
 
   const handlePrevPage = () => {
-    setperPage(10);
+    setperPage(perPage);
     if (page > 1) {
       setPage(page - 1);
     }
@@ -110,7 +109,7 @@ export default function CardComponent() {
         </div>
       </div>
       {/* Cards grid */}
-      <div className="px-10 grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mt-4">
+      <div className="px-4 md:px-20 grid grid-cols-2 md:grid-cols-4 gap-4 justify-center mt-4">
         {products.map((product, i) => (
           <div key={i} className="w-full">
             <Card className="py-4 max-w-[300px]">
@@ -161,7 +160,7 @@ export default function CardComponent() {
                   <Button
                     className="text-white"
                     color={
-                      isButtonSelectedGroup[product.id] ? "primary" : "primary"
+                      "primary"
                     }
                     onClick={() => toggleButton(product.id)}
                     variant={
