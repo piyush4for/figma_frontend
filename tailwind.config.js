@@ -12,6 +12,9 @@ module.exports = {
   theme: {
     extend: {
       borderRadius: {
+        fontFamily: {
+          aesthetic: ["Aesthetic"],
+        },
         extraLarge: '12rem'
       },
       backgroundImage: {
@@ -24,6 +27,11 @@ module.exports = {
   darkMode: "class",
   plugins: [
     nextui({
+      layout: {
+        fontFamily: {
+          aesthetic: ["Aesthetic"],
+        }
+      },
       themes: {
         light: {
           colors: {
