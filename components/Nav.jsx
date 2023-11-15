@@ -109,7 +109,10 @@ export default function Nav() {
             as={Link}
             href="#"
             variant="flat"
-            onClick={()=>{router.push('/login')}}
+            onClick={()=>{
+              localStorage.removeItem("jwtToken")
+              router.push('/login') 
+            }}
             >
               
 {showSpinner ? <Spinner color="primary" size="sm"/> : <><Wallet/>"Connect wallet"</>}

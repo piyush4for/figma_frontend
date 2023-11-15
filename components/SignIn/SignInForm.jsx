@@ -8,9 +8,6 @@ import {
     Button,
     Input,
     Checkbox,
-    Textarea,
-    Select,
-    SelectItem,
   } from "@nextui-org/react";
 import { EyeFilledIcon } from '../PasswordInput/EyeFilledIcon';
 import { EyeSlashFilledIcon } from '../PasswordInput/EyeSlashFilledIcon';

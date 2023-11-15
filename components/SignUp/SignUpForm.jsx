@@ -1,17 +1,14 @@
 "use client"
 import React from 'react'
 import { useForm, Controller } from "react-hook-form";
+import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import Link from 'next/link';
-import { ToastContainer, toast } from 'react-toastify';
+import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {
     Button,
     Input,
-    Checkbox,
-    Textarea,
-    Select,
-    SelectItem,
+    
   } from "@nextui-org/react";
 import { EyeFilledIcon } from '../PasswordInput/EyeFilledIcon';
 import { EyeSlashFilledIcon } from '../PasswordInput/EyeSlashFilledIcon';
@@ -19,6 +16,7 @@ import { EyeSlashFilledIcon } from '../PasswordInput/EyeSlashFilledIcon';
    
       
 const SignUpForm = () => {
+  const router = useRouter()
     
     //for email valiadate
     const [value, setValue] = React.useState("aadya@mailinator.com");
@@ -76,7 +74,7 @@ const SignUpForm = () => {
                 progress:0 
                 
             });
-              
+            response.data.token==null?reset():setTimeout( ()=> { router.push('/login')},2000);
             } else {
                 toast.error('connection error', {
                     position: toast.POSITION.TOP_RIGHT,

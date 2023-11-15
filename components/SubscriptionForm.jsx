@@ -1,10 +1,8 @@
-"use client"
+
 import { Button, Input } from "@nextui-org/react";
 import React from "react";
 
 const SubscriptionForm = () => {
-    const [isFocused, setIsFocused] = React.useState(false);
-  const [hasContent, setHasContent] = React.useState(false);
   
   return (
     <div id="wineries">
