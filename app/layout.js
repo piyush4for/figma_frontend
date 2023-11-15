@@ -1,7 +1,7 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import {inter} from './font'
 import {Providers} from "./providers";
-const inter = Inter({ subsets: ['latin'] })
+
+
 
 export const metadata = {
   title: "Piyush's figma clone",
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className='dark'>
       
-      <body className={inter.className}><Providers>
+      <body className={`${inter.className}`}><Providers>
           {children}
         </Providers></body>
     </html>

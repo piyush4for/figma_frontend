@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image } from '@nextui-org/react'
+import { hard_to_download_font } from '../app/font'
 
 const HomePageStats = () => {
   return (
@@ -48,8 +49,8 @@ const HomePageStats = () => {
 
           <div className="text-center mx-auto sm:text-center">
             
-            <h1 className="text-[130px] px-10 font-extrabold -mb-20 uppercase">𝖙𝖍𝖊 </h1>
-            <h1 className="text-[130px] px-10 font-extrabold -mb-10 uppercase"> 𝖜𝖎𝖓𝖊</h1>
+            <h1 className={`${hard_to_download_font.className} text-[130px] px-10 font-extrabold  -mb-20 `}>THE  </h1>
+            <h1 className={`${hard_to_download_font.className} text-[130px] px-10 font-extrabold  -mb-20 uppercase`}> wine</h1>
             <div className="mt-8">
               <h1 className=" text-3xl text-center font-semibold text-gray-800 dark:text-white">
                 & Spirits Web3 Marketplace
