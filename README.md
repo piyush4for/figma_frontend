@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+The figma design for my project [Link](https://www.figma.com/file/3dq6gl0d1dVfH4JGVI1buS/wine?type=design&node-id=0-1&mode=design&t=BVm0vtSW56HphuPm-0)
+and my project deployed [Link}(https://figmafrontend.vercel.app/)
+
 ## Getting Started
 
 First, run the development server:
